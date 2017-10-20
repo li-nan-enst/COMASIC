@@ -57,6 +57,34 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 
 Présentations des méthodes à plusieurs pas du type Adams-Bashworth, Adams-Moulton ou BDF pour ODE. Algorithmes et propriétés de stabilité.
 
+### l'idée générale: 
+reduire le nombre d'evaluer la fonc f(...) en reutilisant les résultats ce que on a déjà eu.
+
+### Two difference operate - forward / backward
+
+#### Adams Family
+
+ExplicitAB formule: we do the integration for both sides of equation.
+* n-order one could only be used after n-1 previous steps (not self starting method)
+* step-size control is complicate 
+
+ImplicitAM formule: similar to EAB, but not start from the t_k but t_k+1
+
+ONLY for non-stiff problem!!!(except for AM1 AM2)
+
+#### ImplitBackwardDifferenceFormule - for industrial codes Dymola
+
+Not by integration but relay on the y_n, y_n-1, y_n-2...
+
+### Summary
+* they are computationaly cheaper than Runge-Kutta methods 
+* they can vary in order
+
+but
+* variation of the step-size is possibly more computationnaly involve
+* the properties of stability are weaker than Runge-Kutta methods
+(may be sufficient for most of the problems)
+
 ## Cours 4
 
 Adaptation des méthodes numériques à la résolution des équations algébro-différentielles.
