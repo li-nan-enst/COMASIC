@@ -27,7 +27,6 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 * It is naturally a format to present the numerical solution for a IVP.
 * It is based on the Butcher table. 
 
-|     |                 |
 |-----|-----------------|
 | c1  | a11 a12 ... a1s |
 | c2  | a21 a22 ... a2s |
@@ -35,19 +34,18 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 | cs  | as1 as2 ... ass |
 |     | b1 b2 ... bs    |
 |     | c1 c2 ... cs    | 
-||ki = f(tn+ci*h, yn+h*sigma*(aij*kj))|
-||yn+1 = yn+h*sigma*biki|
+||ki = f(tn+ci*h, yn+h*sigma*(aij*kj)), yn+1 = yn+h*sigma*biki|
 
 2. 
 ExplicitRK - y'=f(t, y): En utilisant la condition de Taylor expansion 
-1 stage - Euler's method (order 1) - Single-step fixed step-size ERK
-2 stage - Heun's method (order 2) - Single-step fixed step-size ERK
-4 stage - Bogacki-Shamine (ode23) - Single-step VARIABLE  step-size ERK
+* 1 stage - Euler's method (order 1) - Single-step fixed step-size ERK
+* 2 stage - Heun's method (order 2) - Single-step fixed step-size ERK
+* 4 stage - Bogacki-Shamine (ode23) - Single-step VARIABLE  step-size ERK
 ImplicitRK - y'=f(y): s-stage method has order [less than] 2s
-Gauss IRK 2s, order 4, s=2
-Radau family 2s-1, order 3, s=2
-Lobatto family 2s-2, order 4, s=3
-SDIRK family, order 4, s=5
+* Gauss IRK 2s, order 4, s=2
+* Radau family 2s-1, order 3, s=2
+* Lobatto family 2s-2, order 4, s=3 
+* SDIRK family, order 4, s=5
 
 3. Step size control: success->increse h, failure->decrease h
 Total stability of IVP: small pertubation could not largely change the result
