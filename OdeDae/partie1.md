@@ -19,8 +19,7 @@ To make distinction, we rewrite it in the semi-explicit form:
 (2) 0 = g(x(t), y(t), t) - free of derivatives => algebraic
 On trouve la solution de la terme algebraic et ensuite la mettre à la prémière terme.
 
-
-## Cours 2
+## Cours 3
 
 Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes et propriétés de stabilité
 
