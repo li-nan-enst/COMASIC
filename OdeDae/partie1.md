@@ -90,6 +90,8 @@ but
 
 Adaptation des méthodes numériques à la résolution des équations algébro-différentielles.
 
+We consider the DAE problem as infinitely stiff and thus we use stiffly stable ODE method to resolve DAE, such as BDF or Radau5.
+
 ## Cours 5
 
 Notion d’index, méthodes de réduction d’index, ordre des méthodes pour résoudre les équations algébro-différentielles.
