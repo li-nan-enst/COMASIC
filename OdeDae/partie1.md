@@ -24,17 +24,18 @@ On trouve la solution de la terme algebraic et ensuite la mettre à la prémièr
 Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes et propriétés de stabilité
 
 1. Runge-Kutta methods
-It is naturally a format to present the numerical solution for a IVP.
-It is based on the Butcher table. 
-c1 | a11 a12 ... a1s
-c2 | a21 a22 ... a2s
-...| ...
-cs | as1 as2 ... ass
-  - -  
-   | b1 b2 ... bs
-   | c1 c2 ... cs
-ki = f(tn+ci*h, yn+h*sigma*(aij*kj))
-yn+1 = yn+h*sigma*biki 
+* It is naturally a format to present the numerical solution for a IVP.
+* It is based on the Butcher table. 
+|     |                 |
+|-----|-----------------|
+| c1  | a11 a12 ... a1s |
+| c2  | a21 a22 ... a2s |
+| ... | ...             |
+| cs  | as1 as2 ... ass |
+|     | b1 b2 ... bs    |
+|     | c1 c2 ... cs    | 
+||ki = f(tn+ci*h, yn+h*sigma*(aij*kj))|
+||yn+1 = yn+h*sigma*biki|
 
 2. 
 ExplicitRK - y'=f(t, y): En utilisant la condition de Taylor expansion 
