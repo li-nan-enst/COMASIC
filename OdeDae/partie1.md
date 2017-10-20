@@ -26,6 +26,7 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 1. Runge-Kutta methods
 * It is naturally a format to present the numerical solution for a IVP.
 * It is based on the Butcher table. 
+
 |     |                 |
 |-----|-----------------|
 | c1  | a11 a12 ... a1s |
