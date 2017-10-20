@@ -15,13 +15,9 @@ Kind of functions
 
 3. DAE : differential algebraic equation f(t, y(t), x(t))=0
 To make distinction, we rewrite it in the semi-explicit form:
-
-x'(t) = f(x(t), y(t), t)
-
-0     = g(x(t), y(t), t) - free of derivatives => algebraic
-
+(1) x'(t) = f(x(t), y(t), t)
+(2) 0 = g(x(t), y(t), t) - free of derivatives => algebraic
 On trouve la solution de la terme algebraic et ensuite la mettre à la prémière terme.
-
 
 ## Cours 2
 
