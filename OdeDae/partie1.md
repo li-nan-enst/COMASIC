@@ -8,20 +8,20 @@ Introduction et presentation du problème de la simulation numérique. Présenta
 * IVP : initial value problem y(0) = const, dydt(0) = const, ...
 
 2. Simulink
-
 Kind of functions
-
 * The output function
 * The update function of discret-time state
 * The update function of continuous-time state
 
 3. DAE : differential algebraic equation f(t, y(t), x(t))=0
-
 To make distinction, we rewrite it in the semi-explicit form:
+
 x'(t) = f(x(t), y(t), t)
+
 0     = g(x(t), y(t), t) - free of derivatives => algebraic
 
 On trouve la solution de la terme algebraic et ensuite la mettre à la prémière terme.
+
 
 ## Cours 2
 
