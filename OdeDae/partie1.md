@@ -48,9 +48,10 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 * Lobatto family 2s-2, order 4, s=3 
 * SDIRK family, order 4, s=5
 
-4. Step size control: success->increse h, failure->decrease h
-Total stability of IVP: small pertubation could not largely change the result
-Stiffness: The effect of the change of h to what extend it could change the final result
+4. 
+* Step size control: success->increse h, failure->decrease h
+* Total stability of IVP: small pertubation could not largely change the result
+* Stiffness: The effect of the change of h to what extend it could change the final result
 
 ## Cours 3
 
