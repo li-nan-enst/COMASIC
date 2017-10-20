@@ -57,7 +57,7 @@ Présentation des méthodes à un pas du type Runge-Kutta pour ODE. Algorithmes 
 
 Présentations des méthodes à plusieurs pas du type Adams-Bashworth, Adams-Moulton ou BDF pour ODE. Algorithmes et propriétés de stabilité.
 
-### l'idée générale: 
+### l'idée générale: 
 reduire le nombre d'evaluer la fonc f(...) en reutilisant les résultats ce que on a déjà eu.
 
 ### Two difference operate - forward / backward
